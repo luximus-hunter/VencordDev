@@ -76,7 +76,9 @@ export default definePlugin({
         if ("armcord" in window) return;
 
         if (ws) ws.close();
-        ws = new WebSocket("ws://127.0.0.1:1337"); // try to open WebSocket
+
+        const port = window?.VesktopNative ? 6463 : 1337;
+        ws = new WebSocket(`ws://127.0.0.1:${port}`); // try to open WebSocket
 
         ws.onmessage = this.handleEvent;
 
