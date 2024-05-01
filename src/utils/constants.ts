@@ -451,7 +451,7 @@ export const Devs = /* #__PURE__*/ Object.freeze({
         id: 242305263313485825n
     },
     Luximus: {
-        name: "Luximus",
+        name: "LuximusTwo",
         id: 306692821358739456n
     }
 } satisfies Record<string, Dev>);
